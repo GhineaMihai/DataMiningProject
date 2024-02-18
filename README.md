@@ -19,7 +19,7 @@
 
 `Use Y or N, capitalized`
 
-**ChatGPT** might not work, with the currently used `api_key`, try to use one of your own by going into `methods.py` ar line 105 and changing the field `api_key=""`
+**ChatGPT** might not work, with the currently used `api_key`, try to use one of your own by going into `methods.py` at line 105 and changing the field `api_key=""`
 
 ## Result
 **After Running**, generally you will see the following output in the console:
@@ -35,8 +35,8 @@
 
 **For example**, the result for running the program and using the categories is:
 
-	**P@1=0.22**
-	**ResInFirst10=0.38**
+	P@1=0.22
+	ResInFirst10=0.38
 
 **If ChatGPT** is used you also have:
 - `ResChatGPT=<number>`
