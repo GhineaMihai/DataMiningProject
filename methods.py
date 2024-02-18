@@ -100,15 +100,15 @@ def create_index():
     ix.close()
 
 
-def call_chatGPT(gptString):
-    client = OpenAI(
-        api_key="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"
-    )
+def call_chatGPT(gpt_string):
+    # If the api_key does not work, try your own
+    client = OpenAI(api_key="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")
     response = client.chat.completions.create(
-        messages=[
+        messages=
+        [
             {
                 "role": "user",
-                "content": gptString,
+                "content": gpt_string,
             }
         ],
         model="gpt-3.5-turbo",
