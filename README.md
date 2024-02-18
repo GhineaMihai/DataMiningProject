@@ -16,7 +16,9 @@
 3. **Do you want to use ChatGPT? (Y/N)**
 
 **Use**, `Y` or `N`. Capitalized and no spaces. If something else is used the program will prompt you with:
+
 `Use Y or N, capitalized`
+
 **ChatGPT** might not work, with the currently used `api_key`, try to use one of your own by going into `methods.py` ar line 105 and changing the field `api_key=""`
 
 ## Result
@@ -32,7 +34,9 @@
 `<number>` is a number between 0 and 1
 
 **For example**, the result for running the program and using the categories is:
+
 **P@1=0.22**
+
 **ResInFirst10=0.38**
 
 **If ChatGPT** is used you also have:
