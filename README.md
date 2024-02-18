@@ -26,7 +26,9 @@
 2. `ResInFirst10=<number>`
 
 `P@1` is the number of times the first answer for a query was also the correct one. divided by 100.
+
 `ResInFirst10` is the number of times the answers for a query also contained the correct one in the top 10 results, divided by 100.
+
 `<number>` is a number between 0 and 1
 
 **For example**, the result for running the program and using the categories is:
