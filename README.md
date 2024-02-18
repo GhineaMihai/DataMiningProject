@@ -35,9 +35,8 @@
 
 **For example**, the result for running the program and using the categories is:
 
-**P@1=0.22**
-
-**ResInFirst10=0.38**
+	**P@1=0.22**
+	**ResInFirst10=0.38**
 
 **If ChatGPT** is used you also have:
 - `ResChatGPT=<number>`
