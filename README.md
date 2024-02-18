@@ -21,6 +21,7 @@
 
 ## Result
 **After Running**, generally you will see the following output in the console:
+
 1. `P@1=<number>`
 2. `ResInFirst10=<number>`
 
