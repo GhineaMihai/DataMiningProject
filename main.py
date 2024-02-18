@@ -21,12 +21,6 @@ if chatGPT_value == 'Y':
 else:
     with_chatGPT = False
 
-or_and_value = input('Do you want to use OR or AND for the query? (OR/AND) ')
-if or_and_value == 'OR':
-    OR = True
-else:
-    OR = False
-
 # Get the lists of categories, questions and the titles
 categories, clues, titles = methods.get_questions()
 ix = index.open_dir(methods.wiki_index)
@@ -52,10 +46,7 @@ for i in range(100):
         word_queries += category_queries
 
     # Choose if you want to se OR or AND for the queries
-    if OR:
-        combined_query = Or(word_queries)
-    else:
-        combined_query = And(word_queries)
+    combined_query = Or(word_queries)
     with ix.searcher() as searcher:
         results = searcher.search(combined_query)
         if with_chatGPT:
@@ -80,7 +71,7 @@ for i in range(100):
             res = methods.call_chatGPT(gptString)
             if res == titles[i]:
                 chatGPT_matches = chatGPT_matches + 1
-print(matches / 100)
-print(matches_first_10 / 100)
+print('P@1=' + str(matches / 100))
+print('ResInFirst10=' + str(matches_first_10 / 100))
 if with_chatGPT:
-    print(chatGPT_matches / 100)
+    print('ResChatGPT=' + str(chatGPT_matches / 100))
